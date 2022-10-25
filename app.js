@@ -22,7 +22,7 @@ router.get("/cycki",async(req,res)=>{
 
     console.log("cipeczka")
    
-       return res.send(JSON.parse({"sdfdsf":3434}))
+       return res.send(JSON.parse("dsfdsf"))
        
        })
 
