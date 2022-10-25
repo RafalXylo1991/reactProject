@@ -18,7 +18,7 @@ app.set("port", port);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use("/", router);
-app.get("/cycki",async(req,res)=>{
+router.get("/cycki",async(req,res)=>{
 
     console.log("cipeczka")
    
