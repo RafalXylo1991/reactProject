@@ -21,8 +21,10 @@ app.use("/", router);
 router.get("/cycki",async(req,res)=>{
 
     console.log("cipeczka")
-   
-       return res.send("cipeczka")
+   var json={
+    "employee":{"name":"John", "age":30, "city":"New York"}
+    }
+       return res.send(json)
        
        })
 
