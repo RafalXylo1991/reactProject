@@ -24,6 +24,7 @@ router.get("/cycki",async(req,res)=>{
    var json={
     "employee":{"name":"John", "age":30, "city":"New York"}
     }
+    json.headers.add('Access-Control-Allow-Origin', '*')
        return res.send(json)
        
        })
