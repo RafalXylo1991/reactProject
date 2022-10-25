@@ -22,7 +22,7 @@ app.get("/cycki",async(req,res)=>{
 
     console.log("cipeczka")
    
-       return res.send("cipeckza")
+       return "cipeckza"
        
        })
 
