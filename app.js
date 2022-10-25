@@ -22,7 +22,7 @@ router.get("/cycki",async(req,res)=>{
 
     console.log("cipeczka")
    
-       return "cipeckza"
+       return res.send("cycunie")
        
        })
 
