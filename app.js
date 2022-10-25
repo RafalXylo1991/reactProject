@@ -18,6 +18,17 @@ app.set("port", port);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use("/", router);
+app.get("/cycki",async(req,res)=>{
+
+    console.log("cipeczka")
+   
+       return res.send("cipeckza")
+       
+       })
+
+
+
+
 
 app.listen(port, () =>{ console.log(`Server running on localhost:${port}`)
 
