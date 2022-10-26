@@ -18,9 +18,9 @@ app.set("port", port);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use("/", router);
-router.get("/cycki",async(req,res)=>{
+router.get("/getData",async(req,res)=>{
 
-    console.log("cipeczka")
+   
    var json={
     "employee":{"name":"John", "age":30, "city":"New York"}
     }
