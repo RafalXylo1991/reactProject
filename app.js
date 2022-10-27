@@ -17,11 +17,8 @@ app.set("port", port);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use("/", router);
-const corsOptions = {
-	origin: 'http://localhost:3000/',
-	optionsSuccessStatus: 200
-};
-app.use(cors(corsOptions));
+
+app.use(cors());
 router.get("/getData",async(req,res)=>{
 
    
