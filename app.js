@@ -26,7 +26,7 @@ router.get("/getData",async(req,res)=>{
     "employee":{"name":"John", "age":30, "city":"New York"}
     }
 
-       return res.send("cipeczka")
+       return res.send(json)
        
        })
 
