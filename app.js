@@ -38,7 +38,7 @@ router.get("/getData",async(req,res)=>{
     "employee":{"name":"John", "age":30, "city":"New York"}
     }
 
-       return res.send(json)
+      res.json(json)
        
        })
 
