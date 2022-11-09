@@ -30,9 +30,9 @@ credentials:true
 }));
 
 router.get("/getData",async(req,res)=>{
-   req.header("Access-Control-Allow-Origin","*")
+   req.header("Access-Control-Allow-Origin","http://localhost:3000")
    req.header("Access-Control-Allow-Methods","GET,POST")
-   req.header("Access-Control-Allow-Headers","Content-Type, Authorization")
+
    
    var json={
     "employee":{"name":"John", "age":30, "city":"New York"}
