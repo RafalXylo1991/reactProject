@@ -18,7 +18,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use("/", router);
 
-app.use(cors());
+app.use(cors({
+origin:"http//:127.0.0.1:3000",
+credentials:true
+
+}));
+
 router.get("/getData",async(req,res)=>{
 
    
