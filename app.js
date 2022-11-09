@@ -17,7 +17,12 @@ app.set("port", port);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use("/", router);
-
+app.use((req,res,next)=>{
+   req.header("Access-Control-Allow-Origin","*")
+   req.header("Access-Control-Allow-Methods","GET,POST")
+   req.header("Access-Control-Allow-Headers","Content-Type, Authorization")
+   next()
+})
 app.use(cors({
 origin:"http://localhost:3000",
 credentials:true
